@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link id="mode" rel="stylesheet" href="./assets/css/style.css">
+    <script defer src="./assets/js/database.js"></script>
+    <script defer src="./assets/js/index.js"></script>
+    <title>E-commerce Geek</title>
+    <meta name="description" content="Está procurando por camisas e moleton ou até action figures venha conhcer a loja geek!">
+    <link rel="shortcut icon" href="./assets/img/pngegg.png" type="image/x-icon">
+</head>
+<body>
+    <header class="cabecalho">
+       <h1>
+        <a href="#">Loja Geek</a>
+       </h1>
+       <div class="menu_mobile">
+            <button class="menu_sanduiche">
+                <a href="#" class="sanduiche">
+                    <div class="sanduiche__linha"></div>
+                    <div class="sanduiche__linha"></div>
+                    <div class="sanduiche__linha"></div>
+                </a>
+        </button>
+        <button class="carrinhoDeCompra">
+                <img src="./assets/img/carrinho-de-compras (1).png" alt="carrinho-de-compras" >
+                <span class="cor"></span>
+            </button>
+       </div>
+       <nav class="navegacao menu_listaDesliga"> 
+            <ul>
+                <li class="menu_listaLiga">
+                    <a class="menu_lista_pri" href="#">Todos</a>
+                </li>
+                <li class="menu_listaLiga">
+                    <a class="menu_listaLiga_a" href="#">Figures</a>
+                </li>
+                <li class="menu_listaLiga">
+                    <a class="menu_listaLiga_a"  href="#">Camisetas</a>
+                </li>
+                <li class="menu_listaLiga">
+                    <a class="menu_listaLiga_a" href="#">Moletons</a>
+                </li>
+                <li class="menu_listaLiga">
+                    <p class="menu_listaLiga_p" href="#">Mode:
+                        <div class="botaoDark"></div>
+                    </p>
+                </li>
+           </ul>
+       </nav>
+       
+    </header>
+    <div class="container__desk">
+        <main class="principal">
+            <ul></ul>
+        </main>
+        <aside class="lateral">
+            <form class="lateral_pesquisa">
+                <input  type="text" placeholder="Digite aqui sua pesquisa">
+                <button  type="button">Pesquisar</button>
+            </form>
+            <div class="interacao_mobile">
+                    <h2>Carrinho de compras</h2>
+                <ul class="lateral_ul">
+                    <li class="carrinhoVazio">
+                        <p>Carrinho vázio</p>
+                        <span>Adicione itens</span>
+                    </li>
+                </ul>
+                <div class="contador Contador_seria">
+                    <ul class="contador_ul">
+                        <li class="contador_quantidade">
+                            <p>Quantidade:</p>
+                            <span>3</span>
+                        </li>
+                        <li class="contador_quantidade">
+                            <p>Total:</p>
+                            <span>R$ 100,00</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </aside>
+    </div>
+    <footer class="rodape_teste">
+        <h2>
+            <a href="#">Loja Geek</a>
+        </h2>
+    </footer>
+</body>
+</html>
