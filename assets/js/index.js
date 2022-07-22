@@ -11,11 +11,12 @@ let spanQuantidade     = document.querySelectorAll(".contador_quantidade span")[
 let spanValor          = document.querySelectorAll(".contador_quantidade span")[1]
 let spanCor            = document.querySelector(".cor")
 let mode               = document.querySelector("#mode")
+let local              =window.location.href
 
 function whiteMode(x) {
     console.log();
     if (x.target.innerText === "Mode:" ||x.target.classList.value === "botaoDark") {
-            if (mode.href === "http://127.0.0.1:5500/assets/css/style.css" ||mode.href === "https://davidsonq.github.io/Primeiro-Projeto/assets/css/style.css") {
+            if (mode.href.includes("assets/css/style.css")) {
             mode.href ="./assets/css/styleWhite.css"
             
         } else {
