@@ -15,7 +15,7 @@ let mode               = document.querySelector("#mode")
 function whiteMode(x) {
     console.log();
     if (x.target.innerText === "Mode:" ||x.target.classList.value === "botaoDark") {
-            if (mode.href === "http://127.0.0.1:5500/assets/css/style.css") {
+            if (mode.href === "http://127.0.0.1:5500/assets/css/style.css" ||mode.href === "https://davidsonq.github.io/Primeiro-Projeto/assets/css/style.css") {
             mode.href ="./assets/css/styleWhite.css"
             
         } else {
@@ -48,8 +48,10 @@ function tirandoClass() {
     sanduicheNavegacao.classList.add("menu_listaDesliga")
 
 }
-
-window.addEventListener("resize",tirandoClass)
+function tirandoClas(params) {
+    sanduicheNavegacao.classList.add("menu_listaDesliga")
+}
+window.addEventListener("resize",tirandoClas)
 
 let arrNew = []
 
