@@ -54,13 +54,15 @@ function tirandoClas(params) {
 }
 window.addEventListener("resize",tirandoClas)
 
-let arrNew = []
+
 
 function menuNavegacaoSimples(event) {
+    let arrNew = []
     sanduicheDisplay()
     
     if (event.target.tagName === "A") {
-        arrNew = []
+        
+        
         for (let i = 0; i < data.length; i++) {
             if (event.target.innerText === data[i].tag[0]) {
                 arrNew.push(data[i])
