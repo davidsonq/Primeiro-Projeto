@@ -49,7 +49,11 @@ function tirandoClass() {
     sanduicheNavegacao.classList.add("menu_listaDesliga")
 
 }
-function tirandoClas(params) {
+function tirandoClas() {
+    if (window.innerWidth > 949) {
+        divMobile.classList.add("interacao_mobile")
+    }
+    
     sanduicheNavegacao.classList.add("menu_listaDesliga")
 }
 window.addEventListener("resize",tirandoClas)
